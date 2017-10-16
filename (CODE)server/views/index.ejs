@@ -1,0 +1,431 @@
+<!--
+*----------Dragon be here!----------/
+*      ┏┓     ┏┓
+* 　　┏┛┻━━━━━┛┻┓
+* 　　┃         ┃
+* 　　┃    ━    ┃
+* 　　┃　┳┛　┗┳　┃
+* 　　┃         ┃
+* 　　┃    ┻    ┃
+* 　　┃         ┃
+* 　　┗━┓　　　┏━┛
+* 　　  ┃　　　┃神兽保佑
+* 　　  ┃　　　┃代码无BUG！
+* 　　  ┃　　　┗━━━┓
+* 　　  ┃         ┣┓
+* 　　  ┃         ┏┛
+* 　　  ┗┓┓┏━━┳┓ ┏┛
+* 　　   ┃┫┫   ┃┫┫
+* 　     ┗┻┛　 ┗┻┛ 　　
+* ━━━━━━神兽出没━━━━━━
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%=title%></title>
+
+  <!--样式＋bootstrap＋字体 链接-->
+  <link href="CSS/searchPagestyle.css" rel="stylesheet">
+  <link href="CSS/searchPageformElements.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--网站图标-->
+  <link href="images/icon/searchPageIcon.png" rel="shortcut icon">
+</head>
+<body>
+  <nav class="navbar navbar-custom navbar-inverse navbar-fixed-top"id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <!--浏览器自适应宽度-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--商标logo-->
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse pull-right" id="demo-navbar">
+        <!--导航项目-->
+        <ul class="nav navbar-nav">
+          <li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+        </ul>
+
+
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="searchPage">
+    <div class="jumbotron">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="page-header">
+              <h1 id="jumbotronPageHeaderH1">NEXT BIGS </h1>
+              <p>track the latest football news</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="header">
+            <img src="images/icon/informationIcon/football1.png" class="img-rounded" alt="Responsive image">
+            <p>Real-time/Deep-link to Team or Player</p>
+          </div>
+          <ul class="dataSource">
+            <div class="group">
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-goal.png" alt="">
+                </i>
+                <span>Goal</span>
+              </li>
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-assist.png" alt="">
+                </i>
+                <span>Assist</span>
+              </li>
+            </div>
+            <div class="group">
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-pass.png" alt="">
+                </i>
+                <span>Pass</span>
+              </li>
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-steal.png" alt="">
+                </i>
+                <span>Steal</span>
+              </li>
+            </div>
+            <div class="group">
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-save.png" alt="">
+                </i>
+                <span>Save</span>
+              </li>
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-cards.png" alt="">
+                </i>
+                <span>R/Y cards</span>
+              </li>
+            </div>
+            <div class="group">
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-teamStanding.png" alt="">
+                </i>
+                <span>Team Standing</span>
+              </li>
+              <li>
+                <i class="iconFont iconLogo">
+                  <img src="images/icon/informationIcon/informationIcon-teamInfo.png" alt="">
+                </i>
+                <span>Team Info</span>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 searchPart">
+          <img src="images/icon/informationIcon/football2.png" alt="">
+          <p>Get to Search!</p>
+          <div class="panel-group col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" id="accordion" role="tablist" aria-multiselectable="true" id="searchDiv">
+            <form class="form-horizontal searchForm" >
+              <div class="panel panel-danger">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Players
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchButton1" value="Name" readonly><span class="caret"></span></input>
+                            <ul class="dropdown-menu" id="dropdownMenu1">
+                              <li><a href="javascript:void(0)">Name</a></li>
+                              <li><a href="javascript:void(0)">#</a></li>
+                              <li><a href="javascript:void(0)">@</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="firstLevelSearchContent1">
+                        </div><!-- /input-group -->
+                        <span>OR</span>
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchButton2" value="Name" readonly><span class="caret"></span></input>
+                            <ul class="dropdown-menu" id="dropdownMenu2">
+                              <li><a href="javascript:void(0)">Name</a></li>
+                              <li><a href="javascript:void(0)">#</a></li>
+                              <li><a href="javascript:void(0)">@</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="firstLevelSearchContent2">
+                        </div><!-- /input-group -->
+                        <span>OR</span>
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchButton3" value="Name" readonly><span class="caret"></span></input>
+                            <ul class="dropdown-menu" id="dropdownMenu3">
+                              <li><a href="javascript:void(0)">Name</a></li>
+                              <li><a href="javascript:void(0)">#</a></li>
+                              <li><a href="javascript:void(0)">@</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="firstLevelSearchContent3">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Football Teams
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchButton4" value="Name" readonly><span class="caret"></span></input>
+                            <ul class="dropdown-menu" id="dropdownMenu4">
+                              <li><a href="javascript:void(0)">Name</a></li>
+                              <li><a href="javascript:void(0)">#</a></li>
+                              <li><a href="javascript:void(0)">@</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="secondLevelSearchContent1">
+                        </div><!-- /input-group -->
+                        <span>OR</span>
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchButton5" value="Name" readonly><span class="caret"></span></input>
+                            <ul class="dropdown-menu" id="dropdownMenu5">
+                              <li><a href="javascript:void(0)">Name</a></li>
+                              <li><a href="javascript:void(0)">#</a></li>
+                              <li><a href="javascript:void(0)">@</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="secondLevelSearchContent2">
+                        </div><!-- /input-group -->
+                        <span>OR</span>
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchButton6" value="Name" readonly><span class="caret"></span></input>
+                            <ul class="dropdown-menu" id="dropdownMenu6">
+                              <li><a href="javascript:void(0)">Name</a></li>
+                              <li><a href="javascript:void(0)">#</a></li>
+                              <li><a href="javascript:void(0)">@</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="secondLevelSearchContent3">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-success">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Authors of tweets
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <input type="text" class="btn btn-default" aria-haspopup="true" aria-expanded="false" value="@" readonly></input>
+                            <br>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="..." id="ThirdLevelSearchContent7">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="queryDatabaseOnly"> query database only
+                </label>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <button type="button" class="btn btn-success searchButton" id="searchButton">Goo!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+          <%if(DBpediaList!=''){%>
+            <table class="table table-bordered col-md-4">
+              <thead>
+                <tr class="info">
+                  <th>Name</th>
+                  <th>CurrentClub</th>
+                  <th>Position</th>
+                  <th>BirthDay</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td><%=DBpediaList.playerName%></td>
+                  <td><%=DBpediaList.playerCurrentClub%></td>
+                  <td><%=DBpediaList.playerPosition%></td>
+                  <td><%=DBpediaList.playerBirthDay%></td>
+                </tr>
+              </tbody>
+            </table>
+          <%}%>
+
+
+          <div class="tweetsListShowDiv">
+              <%if(tweetsList.length!=0){ %>
+                <canvas id="tweetsChart" date=<%=tweetsFrequency%>></canvas>
+                <%for(var i=0;i<tweetsList.length;i++){%>
+                  <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 tweetShowBox">
+                    <div class="tweetLeft col-md-2">
+                      <img class="img-rounded headPortrait" src="<%=tweetsList[i].headProfileImg%>" alt="">
+                    </div>
+                    <div class="tweetRight col-md-10">
+                      <div class="tweetHeader">
+                        <strong class="fullName"><%=tweetsList[i].userName%></strong>
+                        <span class="username">@<b><a href="<%=tweetsList[i].authorPage%>" target="_blank"><%=tweetsList[i].screen_name%></a></b></span>
+                        <small class="time">
+                          <span>data:<%=tweetsList[i].time%></span>
+                        </small>
+                      </div>
+                      <div class="tweetContent">
+                        <p class="TweetTextSize tweet-text"><%=tweetsList[i].tweetText%></p>
+                        <a href="<%=tweetsList[i].originTweetURL%>" target="_blank">origin tweet</a>
+                          <%if(tweetsList[i].tweetImg!=''){%>
+                            <img class="img-rounded tweetImg" src="<%=tweetsList[i].tweetImg%>" width="450" height="auto" alt="">
+                          <%}%>
+                      </div>
+                    </div>
+                  </div>
+                <%}%>
+              <%}%>
+          </div>
+
+
+
+          <a href="javascript:void(0);" id="anchor" class="anchor">Back to search</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container-fluid content">
+
+      <div class="row">
+        <footer>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="col-sm-8 pull-left">
+                  <p>© 2017 Intelligent Web Team Work</p>
+                  <p>Department of Computer Science,University of Sheffield</p>
+                </div>
+                <div class="col-sm-4">
+                  <p class="pull-right">
+                    <a href="#top">Back to Top</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="about">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">The introduce about how to use this web app</h4>
+      </div>
+      <div class="modal-body">
+        <p>There are three typing box in the middle of whole page.</p>
+        <p> The Red box 'Players' is the place you can type the information of players you want to search. In addition, there are three small drop-down list that you can choose the searching type. 'Name' means the player's name, '#' means the hashtag and '@' means twitter screen names.
+        </p>
+        <p> The functions of the blue box and green box are the same of that of red box.
+          The screen name typed in green box 'Authors of tweets' can be used to display that player's current club, position and birthday.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Get</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<!--配置文件-->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="javascripts/jquery-3.1.1.min.js"></script>
+  <script src='javascripts/shine.min.js'></script>
+  <script src="javascripts/Chart.js"></script>
+
+<!--界面js-->
+  <script src="javascripts/searchPageJS.js"></script>
+
+</body>
+</html>
