@@ -15,7 +15,7 @@
 
 维基百科的相关信息是通过[DBpedia](http://wiki.dbpedia.org/)进行提取的。具体sparql的语法可以查询[介绍sparql的网站](http://www.xjtushilei.com/2012/11/04/sparql%E5%AD%A6%E4%B9%A0sparql%E7%A4%BA%E4%BE%8B-dbpedia%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81/)进行学习。sparql的语句可以在[wiki的官方在线测试网站](http://dbpedia.org/sparql)进行测试。
 ## Tests 项目运行效果
-初始图形界面状态：
+进入网站的主界面：
 
 ## Contributors 参与者介绍
 濮一帆:advanced Computer Science, Department of Computer Science, University of Sheffield
