@@ -16,8 +16,17 @@
 维基百科的相关信息是通过[DBpedia](http://wiki.dbpedia.org/)进行提取的。具体sparql的语法可以查询[介绍sparql的网站](http://www.xjtushilei.com/2012/11/04/sparql%E5%AD%A6%E4%B9%A0sparql%E7%A4%BA%E4%BE%8B-dbpedia%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81/)进行学习。sparql的语句可以在[wiki的官方在线测试网站](http://dbpedia.org/sparql)进行测试。
 ## Tests 项目运行效果
 进入网站的主界面：![](https://github.com/frayds/Twitter-search-serve/raw/master/mainPage.png)
+### 精确查询足球运动员佩德罗(Pedro)信息
+在绿色搜索框内输入佩德罗官方twitter的账号名即可完成搜索。
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-author--_Pedro17_/query%20from%20database-author--_Pedro17_.png)
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-author--_Pedro17_/DBpedia%20results%20and%20frequency%20from%20database-author--_Pedro17_.png)
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-author--_Pedro17_/tweets%20from%20database-author--_Pedro17_.png)
+### 模糊查询--足球运动员鲁尼(Roony)与球队切尔西(Chelsea)的组合搜索
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-Rooney%20AND%20Chelsea/query%20from%20database%20--Rooney%20AND%20Chelsea.png)
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-Rooney%20AND%20Chelsea/frequency%20from%20database%20--Rooney%20AND%20Chelsea.png)
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-Rooney%20AND%20Chelsea/tweets(1)%20from%20database%20--Rooney%20AND%20Chelsea.png)
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-Rooney%20AND%20Chelsea/tweets(2)%20from%20database%20--Rooney%20AND%20Chelsea.png)
+![](https://github.com/frayds/Twitter-search-serve/raw/master/demo_pictures/results%20from%20database-Rooney%20AND%20Chelsea/tweets(3)%20from%20database%20--Rooney%20AND%20Chelsea.png)
 
 ## Contributors 参与者介绍
 濮一帆:advanced Computer Science, Department of Computer Science, University of Sheffield
-
-Dr Steve Maddock:3D Computer Graphics 的授课老师,老师的相关信息可以前往-- [他的网站](http://staffwww.dcs.shef.ac.uk/people/S.Maddock/index.shtml)。
